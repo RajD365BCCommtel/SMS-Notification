@@ -1,4 +1,4 @@
-//Created: 14/01/23 by Rajesh(rajesh.gan@3ktechnologies.com)
+//Created: 14/01/23 by Rajesh(rajesh.g@3ktechnologies.com)
 //Description: This ia a new Page "GW SMS Connector Setup"
 page 50301 "GW SMS Connector Setup"
 {
@@ -22,6 +22,10 @@ page 50301 "GW SMS Connector Setup"
                 {
                     ApplicationArea = All;
                 }
+                field("Flow Id"; Rec."Flow Id")
+                {
+                    ApplicationArea = All;
+                }
                 group("New Access Token")
                 {
                     Caption = 'Access Token';
@@ -32,10 +36,7 @@ page 50301 "GW SMS Connector Setup"
                         Importance = Additional;
                         MultiLine = true;
                         ShowCaption = false;
-                        Editable = false;
-
                         ToolTip = 'Specifies the value of the Access Token field.';
-
                         trigger OnValidate()
                         begin
                             Rec.SetAccessToken(AccessToken);

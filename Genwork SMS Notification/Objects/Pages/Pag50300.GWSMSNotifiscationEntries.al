@@ -1,4 +1,4 @@
-//Created: 13/01/23 by Rajesh(rajesh.gan@3ktechnologies.com)
+//Created: 13/01/23 by Rajesh(rajesh.g@3ktechnologies.com)
 //Description: This ia a new table "GW SMS Notification Entries"
 page 50300 "GW SMS Notifiscation Entries"
 {
@@ -46,10 +46,7 @@ page 50300 "GW SMS Notifiscation Entries"
                 {
                     ApplicationArea = All;
                 }
-                field("Has Payload"; Rec."Payload Json".HasValue)
-                {
-                    ApplicationArea = All;
-                }
+
                 field("Error Message"; Rec."Error Message")
                 {
                     ApplicationArea = All;

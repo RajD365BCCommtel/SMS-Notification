@@ -1,4 +1,4 @@
-//Created: 14/01/23 by Rajesh(rajesh.gan@3ktechnologies.com)
+//Created: 14/01/23 by Rajesh(rajesh.g@3ktechnologies.com)
 //Description: This ia a new Table "GW SMS Connector Setup"
 table 50301 "GW SMS Connector Setup"
 {
@@ -23,6 +23,8 @@ table 50301 "GW SMS Connector Setup"
             begin
                 if "SMS URL" <> '' then
                     WebRequestHelper.IsSecureHttpUrl("SMS URL");
+
+                //CheckAndAppendURLPath("SMS URL");
             end;
         }
         field(3; "Access Token"; Blob)

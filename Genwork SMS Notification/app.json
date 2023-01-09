@@ -65,12 +65,6 @@
       "publisher": "Microsoft",
       "name": "Tax Engine",
       "version": "21.0.46256.47750"
-    },
-    {
-      "id": "a39da024-de49-4735-be74-972f4a6c58dd",
-      "publisher": "Genworks",
-      "name": "Genworks Base",
-      "version": "1.0.0.24"
     }
   ],
   "screenshots": [],
